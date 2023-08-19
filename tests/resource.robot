@@ -19,4 +19,4 @@ Open the browser with the Mortgage payment url
     Go To               ${url}
 
 Close Browser session
-	Close Browser
+    Close Browser
