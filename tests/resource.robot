@@ -11,7 +11,7 @@ ${user_name}            rahulshettyacademy
 ${valid_password}       learning
 ${invalid_password}     123456789
 ${url}                  https://rahulshettyacademy.com/loginpagePractise/
-
+${shop_url}             https://rahulshettyacademy.com/angularpractice/shop
 *** Keywords ***
 
 Open the browser with the Mortgage payment url
