@@ -28,13 +28,13 @@ Select the Form and navigate to Child window
 *** Keywords ***
 
 Fill the login Form
-[Arguments]         ${username}     ${password}
+    [Arguments]         ${username}     ${password}
     Input Text          id:username     ${username}
     Input Password      id:password     ${password}
     Click Button        id:signInBtn
 
 Wait Until Element Is located in the page
-[Arguments]                     ${element}
+    [Arguments]                     ${element}
     Wait Until Element Is Visible   ${element}
 
 Verify error message is correct
@@ -43,7 +43,7 @@ Verify error message is correct
     Element Text Should Be          ${Error_Message_Login}     Incorrect username/password.
 
 Verify Card titles in the Shop page
-@{expectedList} =   Create List    iphone X     Samsung Note 8     Nokia Edge     Blackberry
+    @{expectedList} =   Create List    iphone X     Samsung Note 8     Nokia Edge     Blackberry
     ${elements} =   Get Webelements    xpath://h4[@class="card-title"]
     @{actualList} =   Create List
     FOR   ${element}   IN   @{elements}
