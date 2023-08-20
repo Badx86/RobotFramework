@@ -20,7 +20,6 @@ Validate Child window Functionality
 *** Keywords ***
 Select the link of Child window
     Click Element       xpath://a[@class="blinkingText"]
-    Sleep               3
 
 Verify the user is Switched to the Child window
     Switch Window       NEW
