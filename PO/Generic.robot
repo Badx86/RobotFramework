@@ -24,4 +24,4 @@ Close Browser session
 
 Wait Until element passed is located on Page
     [Arguments]     ${page_locator}
-    Wait Until Element Is Visible       ${page_locator}
+    Wait Until Element Is Visible       ${page_locator}     timeout=10s
