@@ -8,10 +8,10 @@ ${Error_Message_Login}      css:.alert-danger
 
 *** Test Cases ***
 Validate UnSuccessfull Login
-	Open the browser with the Mortgage payment url
-	Fill the login Form
-	Wait until it checks and display error message
-	Verify error message is correct
+    Open the browser with the Mortgage payment url
+    Fill the login Form
+    Wait until it checks and display error message
+    Verify error message is correct
 
 *** Keywords ***
 Open the browser with the Mortgage payment url
