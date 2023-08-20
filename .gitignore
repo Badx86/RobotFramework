@@ -2,3 +2,6 @@
 venv/Lib
 .idea/
 venv/
+log.html
+report.html
+output.xml
