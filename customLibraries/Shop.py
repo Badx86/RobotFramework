@@ -18,3 +18,5 @@ class Shop:
                 self.selLib.click_button('xpath:(//button[@class="btn btn-info"])['+str(i)+']')
 
             i += 1
+
+        self.selLib.click_link('css:li.active a')
