@@ -34,8 +34,10 @@ Grab the Email id in the Child window
     ${text_split}=  Get From List       ${words_1}    1
     Log     ${text_split}
     @{words_2}=     Split String        ${text_split}
-    ${text_split}=  Get From List       ${words_2}    0
+    ${email}=       Get From List       ${words_2}    0
+    Set Global Variable    ${email}
 
 Switch to Parent window and enter the Email
     Switch Window       MAIN
     Title Should Be     LoginPage Practise | Rahul Shetty Academy
+    Input Text          id:username     ${email}
