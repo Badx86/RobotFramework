@@ -5,7 +5,7 @@ Library         Collections
 Library         String
 Test Setup      Open the browser with the Mortgage payment url
 Test Teardown   Close Browser session
-Resource        resource.robot
+Resource        ../PO/Generic.robot
 
 *** Variables ***
 ${Error_Message_Login}      css:.alert-danger

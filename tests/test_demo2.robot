@@ -4,7 +4,7 @@ Library         SeleniumLibrary
 Library         Collections
 Test Setup      Open the browser with the Mortgage payment url
 Test Teardown   Close Browser session
-Resource        resource.robot
+Resource        ../PO/Generic.robot
 
 *** Variables ***
 ${Error_Message_Login}      xpath://div[@class='alert alert-danger col-md-12']
