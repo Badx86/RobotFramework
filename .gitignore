@@ -5,3 +5,5 @@ venv/
 log.html
 report.html
 output.xml
+.pabotsuitenames
+geckodriver.log
