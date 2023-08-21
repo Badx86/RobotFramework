@@ -26,6 +26,7 @@ Validate UnSuccessfull Login
     LandingPage.Verify error message is correct
 
 Validate Cards display in the Shopping Page
+	[Tags]    END2END
     LandingPage.Fill The Login Form     ${user_name}    ${valid_password}
     ShopPage.Wait Until Element Is located in the page
     ShopPage.Verify Card titles in the Shop page
