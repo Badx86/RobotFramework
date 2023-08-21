@@ -3,7 +3,7 @@ Documentation   To validate the Login form
 Library         SeleniumLibrary
 Library         Collections
 Library         ../customLibraries/Shop.py
-Test Setup      Open the browser with the Mortgage payment url
+Test Setup      Open the browser with the url
 Suite Setup
 Suite Teardown
 Test Teardown   Close Browser session
@@ -26,7 +26,7 @@ Validate UnSuccessfull Login
     LandingPage.Verify error message is correct
 
 Validate Cards display in the Shopping Page
-	[Tags]    END2END
+    [Tags]    END2END
     LandingPage.Fill The Login Form     ${user_name}    ${valid_password}
     ShopPage.Wait Until Element Is located in the page
     ShopPage.Verify Card titles in the Shop page
