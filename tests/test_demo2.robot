@@ -18,6 +18,7 @@ Validate UnSuccessfull Login
     Verify error message is correct
 
 Validate Cards display in the Shopping Page
+	[Tags]    REGRESSION
     Fill The Login Form     ${user_name}    ${valid_password}
     Wait Until Element Is Visible    ${Shop_page_load}
     Verify Card titles in the Shop page

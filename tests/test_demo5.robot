@@ -9,6 +9,7 @@ Test Template   Validate UnSuccessfull Login
 ${Error_Message_Login}      css:.alert-danger
 
 *** Test Cases ***
+[Tags]    SMOKE
 Login with user ${username} and password ${password}        defaultDataUsername     defaultDataPassword
 
 *** Keywords ***
