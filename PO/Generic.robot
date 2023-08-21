@@ -13,10 +13,15 @@ ${invalid_password}         123456789
 ${base_url}                 https://rahulshettyacademy.com/loginpagePractise/
 ${shop_url}                 https://rahulshettyacademy.com/angularpractice/shop
 ${document_request_url}     https://rahulshettyacademy.com/documents-request
-*** Keywords ***
 
+*** Keywords ***
 Open the browser with the Mortgage payment url
     Create Webdriver    Chrome
+    Go To               ${base_url}
+
+Open the browser with the url
+	[Arguments]         ${browser_name}
+    Create Webdriver    ${browser_name}
     Go To               ${base_url}
 
 Close Browser session

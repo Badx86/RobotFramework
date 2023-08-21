@@ -4,6 +4,8 @@ Library         SeleniumLibrary
 Library         Collections
 Library         ../customLibraries/Shop.py
 Test Setup      Open the browser with the Mortgage payment url
+Suite Setup
+Suite Teardown
 Test Teardown   Close Browser session
 Resource        ../PO/Generic.robot
 Resource        ../PO/LandingPage.robot
