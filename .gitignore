@@ -7,3 +7,4 @@ report.html
 output.xml
 .pabotsuitenames
 geckodriver.log
+pabot_results/
