@@ -18,13 +18,14 @@ Validate UnSuccessfull Login
     Verify error message is correct
 
 Validate Cards display in the Shopping Page
-	[Tags]    REGRESSION
+    [Tags]    REGRESSION
     Fill The Login Form     ${user_name}    ${valid_password}
     Wait Until Element Is Visible    ${Shop_page_load}
     Verify Card titles in the Shop page
     Select the Card     Nokia Edge
 
 Select the Form and navigate to Child window
+    [Tags]    NEWFEATURE
     Fill The Login Details and Login Form
 
 *** Keywords ***
