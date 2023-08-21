@@ -12,6 +12,7 @@ ${Shop_page_load}           xpath://a[@class='nav-link btn btn-primary']
 
 *** Test Cases ***
 Validate UnSuccessfull Login
+    [Tags]    SMOKE
     Fill the login Form     ${user_name}    ${invalid_password}
     Wait Until Element Is Visible       ${Error_Message_Login}
     Verify error message is correct

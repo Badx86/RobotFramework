@@ -20,6 +20,7 @@ ${country_name}             Armenia
 
 *** Test Cases ***
 Validate UnSuccessfull Login
+    [Tags]    SMOKE
     LandingPage.Fill the login Form     ${user_name}    ${invalid_password}
     LandingPage.Wait Until Element Is located in the page
     LandingPage.Verify error message is correct
