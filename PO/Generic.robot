@@ -20,7 +20,7 @@ Open the browser with the Mortgage payment url
     Go To               ${base_url}
 
 Open the browser with the url
-	[Arguments]         ${browser_name}
+    [Arguments]         ${browser_name}
     Create Webdriver    ${browser_name}
     Go To               ${base_url}
 
